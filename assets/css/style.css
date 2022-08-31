@@ -1,3 +1,24 @@
+:root{
+    --BgColor: #d9dcd6;
+    --color1: #2a607c;
+    --color2: #ffffff;
+    --color3: #0072bb;
+    --width: 100%;
+    --figMargin: 25px;
+    --maxHeight: 200px;
+    --contentMargin: 20px;
+    --contentpadding: 50px;
+    --contentheight: 300px;
+    --contentH2: 36px;
+    --benefitMargin: 32px;
+    --benefitH3: 10px;
+    --benefitAlign: center;
+    --benefitDisplay: block;
+    --benefitMargin: 10px auto;
+    --benefitMax-width: 150px;
+
+
+}
 /* Universal Selector */
 * {
     box-sizing: border-box;
@@ -6,11 +27,11 @@
 }
 /* Element Selectors select all of that element type */
 body {
-    background-color: #d9dcd6;
+    background-color: var(--BgColor);
 }
 
 a {
-    color: #ffffff;
+    color: var(--color2);
     text-decoration: none;
 }
 
@@ -21,13 +42,13 @@ p {
 
 /*header classes*/
 .header {
-    width: 100%;
+    width: var(--width);
     display: inline-flex;
     justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--color1);
+    color: var(--color2);
 }
 
 .header h1 {
@@ -36,7 +57,7 @@ p {
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: var(--BgColor);
 }
 
 nav {
@@ -44,7 +65,7 @@ nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2a607c;
+    background-color: var(--color1);
     font-size: 20px;
 }
 
@@ -59,8 +80,8 @@ nav {
 /*figure classes*/
 .hero {
     height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
+    width: var(--width);
+    margin-bottom: var(--figMargin);
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
@@ -68,12 +89,12 @@ nav {
 
 .float-left {
     float: left;
-    margin-right: 25px;
+    margin-right: var(--figMargin);
 }
 
 .float-right {
     float: right;
-    margin-left: 25px;
+    margin-left: var(--figMargin);
 }
 /*Main classes*/
 .content {
@@ -83,57 +104,57 @@ nav {
 }
 
 .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: var(--contentMargin);
+    padding: var(--contentpadding);
+    height: var(--contentheight);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: var(--contentMargin);
+    padding: var(--contentpadding);
+    height: var(--contentheight);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: var(--contentMargin);
+    padding: var(--contentpadding);
+    height: var(--contentheight);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 .search-engine-optimization img {
-    max-height: 200px;
+    max-height: var(--maxHeight);
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+    max-height: var(--maxHeight);
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+    max-height: var(--maxHeight);
 }
 
 .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: var(--contentMargin);
+    font-size: var(--contentH2);
 }
 
 .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: var(--contentMargin);
+    font-size: var(--contentH2);
 }
 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: var(--contentMargin);
+    font-size: var(--contentH2);
 }
 /*aside classes*/
 .benefits {
@@ -148,51 +169,51 @@ nav {
 }
 
 .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: var(--benefitMargin);
+    color: var(--color2);
 }
 
 .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: var(--benefitMargin);
+    color: var(--color2);
 }
 
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: var(--benefitMargin);
+    color: var(--color2);
 }
 
 .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: var(--benefitH3);
+    text-align: var(--benefitAlign);
 }
 
 .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: var(--benefitH3);
+    text-align: var(--benefitAlign);
 }
 
 .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: var(--benefitH3);
+    text-align: var(--benefitAlign);
 }
 
 .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: var(--benefitDisplay);
+    margin: var(--benefitMargin);
+    max-width: var(--benefitMax-width);
 }
 
 .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: var(--benefitDisplay);
+    margin: var(--benefitMargin);
+    max-width: var(--benefitMax-width);
 }
 
 .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: var(--benefitDisplay);
+    margin: var(--benefitMargin);
+    max-width: var(--benefitMax-width);
 }
 /*Footer classes*/
 .footer {
@@ -226,7 +247,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     height: fit-content;
-    width: 100%;
+    width: var(--width);
     margin: 3% 0%;
     }
   }
