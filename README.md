@@ -1,4 +1,4 @@
-# Module1Challenge
+# HoriseonRefactor
 obective: refactor existing code
 <<<<<<< HEAD
 repo link: https://github.com/Rubendc91/HoriseonRefactor
